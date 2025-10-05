@@ -1,0 +1,142 @@
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .inhalt, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F7;
+  }
+
+  header {
+    background-color: #283C4A;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #F0E9DC;
+    display: flex;
+    justify-content: space-between; /* oder center / start */
+    align-items: center;
+    flex-wrap: wrap; /* wichtig für Umbruch */
+  }
+
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+  }
+
+  nav a:hover {
+    background-color: #D4C9B5;
+  }
+
+  .container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .erik {
+    background-image: url('https:restaurantxy');
+    background-size: cover;
+    background-position: center;
+    height: 1%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .footer .social-media a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .copyright {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  h2 {
+    color: #283C4A;
+  }
+  
+  .image-box {
+    width: 300px;      
+    border: 2px solid #333;
+    display: inline-block;
+  }
+
+  .image-box img {
+    width: 100%;       
+    height: auto;      
+    display: block;
+  }
+
+  .zeile {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .linie {
+    width: 2px;
+    height: 2em;
+    background-color: black;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .menu, .zeile, .footer-inhalt {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .bild {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav a {
+      display: block;
+      padding: 10px 0;
+    }
+  }
